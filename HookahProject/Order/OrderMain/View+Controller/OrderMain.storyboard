@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Главная-->
+        <scene sceneID="iVQ-6R-FmT">
+            <objects>
+                <viewController storyboardIdentifier="OrderMainVC" id="VMu-Ym-Md8" customClass="OrderMainVC" customModule="HookahProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="76d-Xo-ouY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="original_5cef6f3a2d7e4f025777c6a9_5d763b548c277" translatesAutoresizingMaskIntoConstraints="NO" id="Q9e-8h-8sX">
+                                <rect key="frame" x="103.5" y="18" width="207" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Q9e-8h-8sX" secondAttribute="height" id="9zE-gO-PZW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Москальян" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-ZV-XmU">
+                                <rect key="frame" x="18" y="241" width="378" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Улица Академика Бакулева, дом 10, строение 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nc1-8s-MuP">
+                                <rect key="frame" x="18" y="280.5" width="378" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwS-RV-zDP">
+                                <rect key="frame" x="18" y="657" width="378" height="50"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DHa-c0-jSJ"/>
+                                </constraints>
+                                <state key="normal" title="Выбрать столик"/>
+                                <connections>
+                                    <action selector="butCreateOrderTapped:" destination="VMu-Ym-Md8" eventType="touchUpInside" id="bFF-VG-3wQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jwS-RV-zDP" firstAttribute="leading" secondItem="9sV-tS-1BJ" secondAttribute="leading" constant="18" id="4A4-id-f5B"/>
+                            <constraint firstItem="Q9e-8h-8sX" firstAttribute="top" secondItem="9sV-tS-1BJ" secondAttribute="top" constant="18" id="AaV-cC-9gc"/>
+                            <constraint firstItem="lDg-ZV-XmU" firstAttribute="top" secondItem="Q9e-8h-8sX" secondAttribute="bottom" constant="16" id="Hs3-zg-nVO"/>
+                            <constraint firstItem="Nc1-8s-MuP" firstAttribute="top" secondItem="lDg-ZV-XmU" secondAttribute="bottom" constant="8" id="IMH-5x-GoB"/>
+                            <constraint firstItem="Nc1-8s-MuP" firstAttribute="leading" secondItem="9sV-tS-1BJ" secondAttribute="leading" constant="18" id="Im5-d0-Dd1"/>
+                            <constraint firstItem="9sV-tS-1BJ" firstAttribute="trailing" secondItem="jwS-RV-zDP" secondAttribute="trailing" constant="18" id="a6O-Zb-e3y"/>
+                            <constraint firstItem="Q9e-8h-8sX" firstAttribute="centerX" secondItem="76d-Xo-ouY" secondAttribute="centerX" id="eK4-eK-Uld"/>
+                            <constraint firstItem="9sV-tS-1BJ" firstAttribute="trailing" secondItem="Nc1-8s-MuP" secondAttribute="trailing" constant="18" id="hl0-Ky-Nut"/>
+                            <constraint firstItem="lDg-ZV-XmU" firstAttribute="leading" secondItem="9sV-tS-1BJ" secondAttribute="leading" constant="18" id="m0b-E0-mw8"/>
+                            <constraint firstItem="9sV-tS-1BJ" firstAttribute="bottom" secondItem="jwS-RV-zDP" secondAttribute="bottom" constant="18" id="os7-jx-W2F"/>
+                            <constraint firstItem="9sV-tS-1BJ" firstAttribute="trailing" secondItem="lDg-ZV-XmU" secondAttribute="trailing" constant="18" id="vej-7t-70A"/>
+                            <constraint firstItem="Q9e-8h-8sX" firstAttribute="width" secondItem="76d-Xo-ouY" secondAttribute="width" multiplier="0.5" id="z9C-aj-Nk4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9sV-tS-1BJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Главная" id="yMg-su-Fer">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="lGJ-C7-bEA"/>
+                        <barButtonItem key="leftBarButtonItem" image="ellipsis" catalog="system" id="xgs-0U-Trx"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="butCreateOrder" destination="jwS-RV-zDP" id="fa2-Mm-Ecm"/>
+                        <outlet property="imageRestaurant" destination="Q9e-8h-8sX" id="O3D-4T-PFH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8E-1E-7fw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Главная-->
+        <scene sceneID="LUA-qT-lHU">
+            <objects>
+                <navigationController storyboardIdentifier="OrderMainNav" automaticallyAdjustsScrollViewInsets="NO" id="upX-54-iIg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Главная" image="icons8-hookah-100" id="J4x-5e-440"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="H9q-AV-hOs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VMu-Ym-Md8" kind="relationship" relationship="rootViewController" id="dJP-L3-ZNt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZvN-Z7-O5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
+        <image name="icons8-hookah-100" width="21" height="23"/>
+        <image name="original_5cef6f3a2d7e4f025777c6a9_5d763b548c277" width="2400" height="1500"/>
+    </resources>
+</document>
