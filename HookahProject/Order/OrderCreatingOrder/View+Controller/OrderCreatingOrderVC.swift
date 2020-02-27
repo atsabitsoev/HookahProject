@@ -9,22 +9,47 @@
 import UIKit
 
 class OrderCreatingOrderVC: UIViewController {
+    
+    
+    var configuration: OrderCreatingOrderConfiguration?
+    var order: Order?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        configuration = OrderCreatingOrderConfiguration(maxCustomerCount: 5,
+                                                        availableOptions: [OrderOption(id: 1, name: "У окна"),
+                                                                           OrderOption(id: 2, name: "Мягкие сидения"),
+                                                                           OrderOption(id: 3, name: "Близко к туалету")],
+                                                        availableDates: [],
+                                                        availableTimes: [])
+        order = Order(customerCount: 1, optionIds: [], dateTime: nil)
+    }
+
+}
+
+
+extension OrderCreatingOrderVC: OCOCustomerCountCellDelegate {
+    
+    func customerCountChanged(to count: Int) {
+        order?.customerCount = count
     }
     
+}
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension OrderCreatingOrderVC: OCOOrderOptionCellDelegate {
+    
+    func addOption(id: Int) {
+        order?.optionIds.append(id)
+        print(order!.optionIds)
     }
-    */
-
+    
+    func deleteOption(id: Int) {
+        guard let indexOfOption = order?.optionIds.firstIndex(of: id) else { return }
+        order?.optionIds.remove(at: indexOfOption)
+        print(order!.optionIds)
+    }
+    
 }
