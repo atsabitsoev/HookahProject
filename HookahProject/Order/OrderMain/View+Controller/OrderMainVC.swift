@@ -13,6 +13,7 @@ class OrderMainVC: UIViewController {
     
     @IBOutlet weak var imageRestaurant: UIImageView!
     @IBOutlet weak var butCreateOrder: UIButton!
+    @IBOutlet weak var viewCard: UIView!
     
     
     var firstViewWillLayoutSubviews = true
@@ -27,19 +28,22 @@ class OrderMainVC: UIViewController {
         super.viewWillLayoutSubviews()
         
         if firstViewWillLayoutSubviews {
-            roundImageRestaurant()
             roundButCreateOrder()
+            setShadowToViewCard()
             firstViewWillLayoutSubviews = false
         }
     }
     
     
-    private func roundImageRestaurant() {
-        imageRestaurant.layer.cornerRadius = imageRestaurant.bounds.width / 2
-    }
-    
     private func roundButCreateOrder() {
         butCreateOrder.layer.cornerRadius = 8
+    }
+    
+    private func setShadowToViewCard() {
+        viewCard.layer.shadowColor = UIColor.black.cgColor
+        viewCard.layer.shadowOpacity = 0.1
+        viewCard.layer.shadowOffset = CGSize(width: 0, height: 2)
+        viewCard.layer.shadowRadius = 10
     }
     
     

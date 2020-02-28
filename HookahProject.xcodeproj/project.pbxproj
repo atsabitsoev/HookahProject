@@ -122,9 +122,9 @@
 		AC71DE472406F6E200363F7A /* Order */ = {
 			isa = PBXGroup;
 			children = (
-				AC0586F42408282100B6CAF1 /* OrderEntities */,
 				AC71DE482406F71100363F7A /* OrderMain */,
 				AC71DE4E2407043D00363F7A /* OrderCreatingOrder */,
+				AC0586F42408282100B6CAF1 /* OrderEntities */,
 			);
 			path = Order;
 			sourceTree = "<group>";
