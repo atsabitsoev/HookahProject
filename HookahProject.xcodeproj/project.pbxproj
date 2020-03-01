@@ -22,6 +22,10 @@
 		AC71DE4D2406F74100363F7A /* OrderMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71DE4C2406F74100363F7A /* OrderMainVC.swift */; };
 		AC71DE512407047200363F7A /* OrderCreatingOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC71DE502407047200363F7A /* OrderCreatingOrder.storyboard */; };
 		AC71DE532407048A00363F7A /* OrderCreatingOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71DE522407048A00363F7A /* OrderCreatingOrderVC.swift */; };
+		AC9DC77B240C1A1B00F01986 /* OCODateTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DC77A240C1A1B00F01986 /* OCODateTimeCell.swift */; };
+		AC9DC77F240C1D9B00F01986 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DC77E240C1D9B00F01986 /* TimeIntervalExtensions.swift */; };
+		AC9DC787240C467500F01986 /* CreateOrderToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9DC786240C467500F01986 /* CreateOrderToolbar.xib */; };
+		AC9DC789240C479E00F01986 /* CreateOrderToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DC788240C479E00F01986 /* CreateOrderToolbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,13 +39,18 @@
 		AC71DE2E2406F5AE00363F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC71DE302406F5AE00363F7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AC71DE372406F5B100363F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AC71DE3A2406F5B100363F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC71DE3C2406F5B100363F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC71DE452406F6AC00363F7A /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AC71DE4A2406F72800363F7A /* OrderMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderMain.storyboard; sourceTree = "<group>"; };
 		AC71DE4C2406F74100363F7A /* OrderMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMainVC.swift; sourceTree = "<group>"; };
 		AC71DE502407047200363F7A /* OrderCreatingOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderCreatingOrder.storyboard; sourceTree = "<group>"; };
 		AC71DE522407048A00363F7A /* OrderCreatingOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCreatingOrderVC.swift; sourceTree = "<group>"; };
+		AC9DC77A240C1A1B00F01986 /* OCODateTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCODateTimeCell.swift; sourceTree = "<group>"; };
+		AC9DC77E240C1D9B00F01986 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
+		AC9DC780240C2E4C00F01986 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AC9DC781240C2E5E00F01986 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC9DC786240C467500F01986 /* CreateOrderToolbar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateOrderToolbar.xib; sourceTree = "<group>"; };
+		AC9DC788240C479E00F01986 /* CreateOrderToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderToolbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +93,7 @@
 		AC71DE2D2406F5AE00363F7A /* HookahProject */ = {
 			isa = PBXGroup;
 			children = (
+				AC9DC77C240C1D6600F01986 /* Extensions */,
 				AC71DE472406F6E200363F7A /* Order */,
 				AC71DE432406F5EA00363F7A /* Main */,
 				AC71DE422406F5D400363F7A /* SupportingFiles */,
@@ -162,8 +172,19 @@
 				AC0586F12408278B00B6CAF1 /* OrderCreatingOrderTableview.swift */,
 				AC0586F724082AA900B6CAF1 /* OCOCustomerCountCell.swift */,
 				AC6FE9222408394900F7A616 /* OCOOrderOptionCell.swift */,
+				AC9DC77A240C1A1B00F01986 /* OCODateTimeCell.swift */,
+				AC9DC786240C467500F01986 /* CreateOrderToolbar.xib */,
+				AC9DC788240C479E00F01986 /* CreateOrderToolbarView.swift */,
 			);
 			path = "View+Controller";
+			sourceTree = "<group>";
+		};
+		AC9DC77C240C1D6600F01986 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC9DC77E240C1D9B00F01986 /* TimeIntervalExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +228,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				ru,
 			);
 			mainGroup = AC71DE222406F5AE00363F7A;
 			productRefGroup = AC71DE2C2406F5AE00363F7A /* Products */;
@@ -227,6 +248,7 @@
 				AC71DE512407047200363F7A /* OrderCreatingOrder.storyboard in Resources */,
 				AC71DE4B2406F72800363F7A /* OrderMain.storyboard in Resources */,
 				AC71DE462406F6AC00363F7A /* Main.storyboard in Resources */,
+				AC9DC787240C467500F01986 /* CreateOrderToolbar.xib in Resources */,
 				AC71DE3B2406F5B100363F7A /* LaunchScreen.storyboard in Resources */,
 				AC71DE382406F5B100363F7A /* Assets.xcassets in Resources */,
 			);
@@ -246,6 +268,9 @@
 				AC0586FD240835FE00B6CAF1 /* OrderCreatingOrderVCConfiguration.swift in Sources */,
 				AC0586F824082AA900B6CAF1 /* OCOCustomerCountCell.swift in Sources */,
 				AC0586F62408284100B6CAF1 /* OrderOption.swift in Sources */,
+				AC9DC77F240C1D9B00F01986 /* TimeIntervalExtensions.swift in Sources */,
+				AC9DC789240C479E00F01986 /* CreateOrderToolbarView.swift in Sources */,
+				AC9DC77B240C1A1B00F01986 /* OCODateTimeCell.swift in Sources */,
 				AC0586F22408278B00B6CAF1 /* OrderCreatingOrderTableview.swift in Sources */,
 				AC71DE532407048A00363F7A /* OrderCreatingOrderVC.swift in Sources */,
 				AC6FE9232408394900F7A616 /* OCOOrderOptionCell.swift in Sources */,
@@ -258,7 +283,8 @@
 		AC71DE392406F5B100363F7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AC71DE3A2406F5B100363F7A /* Base */,
+				AC9DC780240C2E4C00F01986 /* ru */,
+				AC9DC781240C2E5E00F01986 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -270,6 +296,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -330,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -395,7 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitsoev.HookahProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bitsoev.HookahProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

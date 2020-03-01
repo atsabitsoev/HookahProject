@@ -36,7 +36,7 @@ class OrderMainVC: UIViewController {
     
     
     private func roundButCreateOrder() {
-        butCreateOrder.layer.cornerRadius = 8
+        butCreateOrder.layer.cornerRadius = 12
     }
     
     private func setShadowToViewCard() {

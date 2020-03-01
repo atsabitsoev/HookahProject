@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="height" constant="50" id="DHa-c0-jSJ"/>
                                 </constraints>
                                 <state key="normal" title="Выбрать столик">
-                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="butCreateOrderTapped:" destination="VMu-Ym-Md8" eventType="touchUpInside" id="bFF-VG-3wQ"/>
