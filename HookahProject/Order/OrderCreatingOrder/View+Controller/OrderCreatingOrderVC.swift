@@ -35,8 +35,7 @@ class OrderCreatingOrderVC: UIViewController {
                                                         availableOptions: [OrderOption(id: 1, name: "У окна"),
                                                                            OrderOption(id: 2, name: "Мягкие сидения"),
                                                                            OrderOption(id: 3, name: "Близко к туалету")],
-                                                        availableDates: [],
-                                                        availableTimes: [])
+                                                        availableDates: [])
         order = Order(customerCount: 1, optionIds: [], dateTime: nil)
     }
     
@@ -85,7 +84,7 @@ class OrderCreatingOrderVC: UIViewController {
         let datePicked = sender.date
         let timeInterval1970 = datePicked.timeIntervalSince(Date(timeIntervalSince1970: 0))
         order?.dateTime = timeInterval1970
-        toolbarDate?.setDateString(timeInterval1970.getDateTimeString(format: "dd.MM.yyyy HH:mm"))
+        toolbarDate?.setDateString(timeInterval1970.getDateTimeString(format: "d MMMM, HH:mm"))
     }
     
     func showDateTimePicker() {
