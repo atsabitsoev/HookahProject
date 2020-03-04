@@ -13,6 +13,6 @@ struct OrderCreatingOrderConfiguration {
     
     var maxCustomerCount: Int = 1
     var availableOptions: [OrderOption] = []
-    var availableDates: [Int] = []
+    var availableDays: [Int] = []
     
 }

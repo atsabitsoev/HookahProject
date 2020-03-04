@@ -22,10 +22,8 @@
 		AC71DE4D2406F74100363F7A /* OrderMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71DE4C2406F74100363F7A /* OrderMainVC.swift */; };
 		AC71DE512407047200363F7A /* OrderCreatingOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC71DE502407047200363F7A /* OrderCreatingOrder.storyboard */; };
 		AC71DE532407048A00363F7A /* OrderCreatingOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71DE522407048A00363F7A /* OrderCreatingOrderVC.swift */; };
-		AC9DC77B240C1A1B00F01986 /* OCODateTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DC77A240C1A1B00F01986 /* OCODateTimeCell.swift */; };
-		AC9DC77F240C1D9B00F01986 /* TimeIntervalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DC77E240C1D9B00F01986 /* TimeIntervalExtensions.swift */; };
-		AC9DC787240C467500F01986 /* CreateOrderToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9DC786240C467500F01986 /* CreateOrderToolbar.xib */; };
-		AC9DC789240C479E00F01986 /* CreateOrderToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DC788240C479E00F01986 /* CreateOrderToolbarView.swift */; };
+		AC75DDF02410233600ACFAD6 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC75DDEF2410233600ACFAD6 /* IntExtension.swift */; };
+		ACE6F2AB24102B2A00C2E952 /* IntArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE6F2AA24102B2A00C2E952 /* IntArrayExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,12 +43,10 @@
 		AC71DE4C2406F74100363F7A /* OrderMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMainVC.swift; sourceTree = "<group>"; };
 		AC71DE502407047200363F7A /* OrderCreatingOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderCreatingOrder.storyboard; sourceTree = "<group>"; };
 		AC71DE522407048A00363F7A /* OrderCreatingOrderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCreatingOrderVC.swift; sourceTree = "<group>"; };
-		AC9DC77A240C1A1B00F01986 /* OCODateTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCODateTimeCell.swift; sourceTree = "<group>"; };
-		AC9DC77E240C1D9B00F01986 /* TimeIntervalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtensions.swift; sourceTree = "<group>"; };
+		AC75DDEF2410233600ACFAD6 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		AC9DC780240C2E4C00F01986 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		AC9DC781240C2E5E00F01986 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AC9DC786240C467500F01986 /* CreateOrderToolbar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateOrderToolbar.xib; sourceTree = "<group>"; };
-		AC9DC788240C479E00F01986 /* CreateOrderToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderToolbarView.swift; sourceTree = "<group>"; };
+		ACE6F2AA24102B2A00C2E952 /* IntArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntArrayExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,22 +165,36 @@
 			children = (
 				AC71DE502407047200363F7A /* OrderCreatingOrder.storyboard */,
 				AC71DE522407048A00363F7A /* OrderCreatingOrderVC.swift */,
+				AC75DDEE2410219A00ACFAD6 /* TableView */,
+				ACE6F2AC24102D1100C2E952 /* ViewSelectDateTime */,
+			);
+			path = "View+Controller";
+			sourceTree = "<group>";
+		};
+		AC75DDEE2410219A00ACFAD6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
 				AC0586F12408278B00B6CAF1 /* OrderCreatingOrderTableview.swift */,
 				AC0586F724082AA900B6CAF1 /* OCOCustomerCountCell.swift */,
 				AC6FE9222408394900F7A616 /* OCOOrderOptionCell.swift */,
-				AC9DC77A240C1A1B00F01986 /* OCODateTimeCell.swift */,
-				AC9DC786240C467500F01986 /* CreateOrderToolbar.xib */,
-				AC9DC788240C479E00F01986 /* CreateOrderToolbarView.swift */,
 			);
-			path = "View+Controller";
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		AC9DC77C240C1D6600F01986 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AC9DC77E240C1D9B00F01986 /* TimeIntervalExtensions.swift */,
+				AC75DDEF2410233600ACFAD6 /* IntExtension.swift */,
+				ACE6F2AA24102B2A00C2E952 /* IntArrayExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACE6F2AC24102D1100C2E952 /* ViewSelectDateTime */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewSelectDateTime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +258,6 @@
 				AC71DE512407047200363F7A /* OrderCreatingOrder.storyboard in Resources */,
 				AC71DE4B2406F72800363F7A /* OrderMain.storyboard in Resources */,
 				AC71DE462406F6AC00363F7A /* Main.storyboard in Resources */,
-				AC9DC787240C467500F01986 /* CreateOrderToolbar.xib in Resources */,
 				AC71DE3B2406F5B100363F7A /* LaunchScreen.storyboard in Resources */,
 				AC71DE382406F5B100363F7A /* Assets.xcassets in Resources */,
 			);
@@ -266,12 +275,11 @@
 				AC0586FA2408313B00B6CAF1 /* Order.swift in Sources */,
 				AC71DE4D2406F74100363F7A /* OrderMainVC.swift in Sources */,
 				AC0586FD240835FE00B6CAF1 /* OrderCreatingOrderVCConfiguration.swift in Sources */,
+				AC75DDF02410233600ACFAD6 /* IntExtension.swift in Sources */,
 				AC0586F824082AA900B6CAF1 /* OCOCustomerCountCell.swift in Sources */,
 				AC0586F62408284100B6CAF1 /* OrderOption.swift in Sources */,
-				AC9DC77F240C1D9B00F01986 /* TimeIntervalExtensions.swift in Sources */,
-				AC9DC789240C479E00F01986 /* CreateOrderToolbarView.swift in Sources */,
-				AC9DC77B240C1A1B00F01986 /* OCODateTimeCell.swift in Sources */,
 				AC0586F22408278B00B6CAF1 /* OrderCreatingOrderTableview.swift in Sources */,
+				ACE6F2AB24102B2A00C2E952 /* IntArrayExtension.swift in Sources */,
 				AC71DE532407048A00363F7A /* OrderCreatingOrderVC.swift in Sources */,
 				AC6FE9232408394900F7A616 /* OCOOrderOptionCell.swift in Sources */,
 			);

@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="732"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="T3P-ly-End">
-                                    <rect key="frame" x="0.0" y="289" width="414" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="245" width="414" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </view>
@@ -115,30 +115,6 @@
                                             <outlet property="switchInclude" destination="bQ0-bY-J1M" id="h6V-Ll-EvH"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OCODateTimeCell" rowHeight="44" id="vMm-mI-Uqz" customClass="OCODateTimeCell" customModule="HookahProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="217" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vMm-mI-Uqz" id="L8d-bf-FRX">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите время бронирования" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ua5-pW-v7E">
-                                                    <rect key="frame" x="20" y="11.5" width="374" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Ua5-pW-v7E" firstAttribute="leading" secondItem="L8d-bf-FRX" secondAttribute="leadingMargin" id="5hy-Yx-sAc"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Ua5-pW-v7E" secondAttribute="trailing" id="8Sg-Gm-RZL"/>
-                                                <constraint firstItem="Ua5-pW-v7E" firstAttribute="centerY" secondItem="L8d-bf-FRX" secondAttribute="centerY" id="fAt-T3-44x"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="labDateTime" destination="Ua5-pW-v7E" id="P5M-Sx-cjc"/>
-                                        </connections>
-                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="gBo-2H-QA5" id="tBg-xe-zaU"/>
@@ -151,7 +127,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ZUH-wo-hJ0"/>
                                 </constraints>
-                                <state key="normal" title="Выбрать время">
+                                <state key="normal" title="Выбрать дату">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -180,10 +156,78 @@
                         <barButtonItem key="backBarButtonItem" title="Назад" id="9yv-4U-rB8"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="butConfirmDateTime" destination="m2g-el-jdC" id="TYW-Uo-ER6"/>
+                        <outlet property="labSelectedDay" destination="EHX-7E-En5" id="EWq-rB-z5c"/>
+                        <outlet property="labTitleSelectDateTime" destination="Cl5-RA-ekj" id="0qn-C7-l96"/>
+                        <outlet property="pickerView" destination="dOi-te-RBP" id="IA7-rn-kIb"/>
                         <outlet property="tableView" destination="Rc6-Oh-wG9" id="MOs-Fb-4wh"/>
+                        <outlet property="viewSelectDateTime" destination="U1a-aD-6yn" id="797-tM-etW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNh-mS-ysx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="U1a-aD-6yn">
+                    <rect key="frame" x="0.0" y="0.0" width="411" height="352"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2g-el-jdC">
+                            <rect key="frame" x="16" y="294" width="379" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="vg8-2G-McC"/>
+                            </constraints>
+                            <state key="normal" title="Подтвердить">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="butConfirmDateTimeTapped:" destination="gBo-2H-QA5" eventType="touchUpInside" id="p2d-kA-8Vh"/>
+                            </connections>
+                        </button>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOi-te-RBP">
+                            <rect key="frame" x="0.0" y="53" width="411" height="233"/>
+                        </pickerView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбрать день" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cl5-RA-ekj">
+                            <rect key="frame" x="20" y="16" width="116" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="sVl-uI-syw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHX-7E-En5">
+                            <rect key="frame" x="291" y="16" width="100" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="CnA-zG-dGM"/>
+                                <constraint firstAttribute="height" constant="21" id="c06-r7-NrT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EHX-7E-En5" secondAttribute="trailing" constant="20" id="3Pw-Ib-G6P"/>
+                        <constraint firstItem="dOi-te-RBP" firstAttribute="top" secondItem="Cl5-RA-ekj" secondAttribute="bottom" constant="16" id="89K-mL-5np"/>
+                        <constraint firstItem="Cl5-RA-ekj" firstAttribute="top" secondItem="U1a-aD-6yn" secondAttribute="top" constant="16" id="9pc-Y3-XRe"/>
+                        <constraint firstItem="m2g-el-jdC" firstAttribute="top" secondItem="dOi-te-RBP" secondAttribute="bottom" constant="8" id="BVN-B6-zyy"/>
+                        <constraint firstItem="dOi-te-RBP" firstAttribute="top" secondItem="EHX-7E-En5" secondAttribute="bottom" constant="16" id="D5f-TY-dai"/>
+                        <constraint firstItem="m2g-el-jdC" firstAttribute="leading" secondItem="wIF-Pf-myF" secondAttribute="leading" constant="16" id="HjO-Kj-fL5"/>
+                        <constraint firstItem="dOi-te-RBP" firstAttribute="trailing" secondItem="wIF-Pf-myF" secondAttribute="trailing" id="Puc-At-otr"/>
+                        <constraint firstItem="dOi-te-RBP" firstAttribute="leading" secondItem="wIF-Pf-myF" secondAttribute="leading" id="VMH-21-lFq"/>
+                        <constraint firstItem="EHX-7E-En5" firstAttribute="top" secondItem="U1a-aD-6yn" secondAttribute="top" constant="16" id="Zv0-Pb-v5D"/>
+                        <constraint firstItem="EHX-7E-En5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cl5-RA-ekj" secondAttribute="trailing" constant="8" id="gMi-AP-ikn"/>
+                        <constraint firstItem="wIF-Pf-myF" firstAttribute="bottom" secondItem="m2g-el-jdC" secondAttribute="bottom" constant="8" id="nnW-WX-o1P"/>
+                        <constraint firstItem="wIF-Pf-myF" firstAttribute="trailing" secondItem="m2g-el-jdC" secondAttribute="trailing" constant="16" id="t1C-Fa-yhn"/>
+                        <constraint firstItem="Cl5-RA-ekj" firstAttribute="leading" secondItem="U1a-aD-6yn" secondAttribute="leading" constant="20" id="xm8-JM-VIh"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="wIF-Pf-myF"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="537.68115942028987" y="25.446428571428569"/>
         </scene>
