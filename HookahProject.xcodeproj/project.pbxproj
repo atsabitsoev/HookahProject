@@ -166,7 +166,6 @@
 				AC71DE502407047200363F7A /* OrderCreatingOrder.storyboard */,
 				AC71DE522407048A00363F7A /* OrderCreatingOrderVC.swift */,
 				AC75DDEE2410219A00ACFAD6 /* TableView */,
-				ACE6F2AC24102D1100C2E952 /* ViewSelectDateTime */,
 			);
 			path = "View+Controller";
 			sourceTree = "<group>";
@@ -188,13 +187,6 @@
 				ACE6F2AA24102B2A00C2E952 /* IntArrayExtension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		ACE6F2AC24102D1100C2E952 /* ViewSelectDateTime */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewSelectDateTime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
