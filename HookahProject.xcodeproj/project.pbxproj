@@ -23,6 +23,7 @@
 		AC71DE512407047200363F7A /* OrderCreatingOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC71DE502407047200363F7A /* OrderCreatingOrder.storyboard */; };
 		AC71DE532407048A00363F7A /* OrderCreatingOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71DE522407048A00363F7A /* OrderCreatingOrderVC.swift */; };
 		AC75DDF02410233600ACFAD6 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC75DDEF2410233600ACFAD6 /* IntExtension.swift */; };
+		ACD9DF7D2411759700BDC4C1 /* ButtonNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD9DF7C2411759700BDC4C1 /* ButtonNext.swift */; };
 		ACE6F2AB24102B2A00C2E952 /* IntArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE6F2AA24102B2A00C2E952 /* IntArrayExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		AC75DDEF2410233600ACFAD6 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		AC9DC780240C2E4C00F01986 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		AC9DC781240C2E5E00F01986 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACD9DF7C2411759700BDC4C1 /* ButtonNext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNext.swift; sourceTree = "<group>"; };
 		ACE6F2AA24102B2A00C2E952 /* IntArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntArrayExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 		AC71DE2D2406F5AE00363F7A /* HookahProject */ = {
 			isa = PBXGroup;
 			children = (
+				ACD9DF7B2411754E00BDC4C1 /* UIElements */,
 				AC9DC77C240C1D6600F01986 /* Extensions */,
 				AC71DE472406F6E200363F7A /* Order */,
 				AC71DE432406F5EA00363F7A /* Main */,
@@ -189,6 +192,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		ACD9DF7B2411754E00BDC4C1 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				ACD9DF7C2411759700BDC4C1 /* ButtonNext.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,6 +277,7 @@
 				AC71DE312406F5AE00363F7A /* SceneDelegate.swift in Sources */,
 				AC0586FA2408313B00B6CAF1 /* Order.swift in Sources */,
 				AC71DE4D2406F74100363F7A /* OrderMainVC.swift in Sources */,
+				ACD9DF7D2411759700BDC4C1 /* ButtonNext.swift in Sources */,
 				AC0586FD240835FE00B6CAF1 /* OrderCreatingOrderVCConfiguration.swift in Sources */,
 				AC75DDF02410233600ACFAD6 /* IntExtension.swift in Sources */,
 				AC0586F824082AA900B6CAF1 /* OCOCustomerCountCell.swift in Sources */,

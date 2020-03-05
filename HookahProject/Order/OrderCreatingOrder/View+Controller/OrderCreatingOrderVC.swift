@@ -65,7 +65,7 @@ class OrderCreatingOrderVC: UIViewController {
         tapRecognizer = UITapGestureRecognizer(target: self,
                                                action: #selector(viewTapped))
         tapRecognizer.isEnabled = false
-        view.addGestureRecognizer(tapRecognizer)
+        tabBarController?.view.addGestureRecognizer(tapRecognizer)
     }
     
     private func configureViewSelectDateTime() {
@@ -90,6 +90,7 @@ class OrderCreatingOrderVC: UIViewController {
     private func showViewSelectDateTime() {
         
         reloadViewSelectDateTime()
+        navigationController?.view.isUserInteractionEnabled = false
         
         tapRecognizer.isEnabled = true
         UIView.animate(withDuration: 0.3) {
@@ -103,6 +104,8 @@ class OrderCreatingOrderVC: UIViewController {
     
     private func hideViewSelectDateTime() {
 
+        navigationController?.view.isUserInteractionEnabled = true
+        
         tapRecognizer.isEnabled = false
         UIView.animate(withDuration: 0.3) {
             self.navigationController?.view.alpha = 1
@@ -115,7 +118,7 @@ class OrderCreatingOrderVC: UIViewController {
     }
     
     private func hideAndShowViewSelectDateTime() {
-        UIView.animate(withDuration: 0.3,
+        UIView.animate(withDuration: 0.15,
                        animations: {
                         self.viewSelectDateTime.frame = CGRect(x: 0,
                                                                y: self.viewSelectDateTime.frame.minY + self.viewSelectDateTime.bounds.height,
@@ -123,7 +126,7 @@ class OrderCreatingOrderVC: UIViewController {
                                                                height: self.viewSelectDateTime.bounds.height)
         }) { (_) in
             self.reloadViewSelectDateTime()
-            UIView.animate(withDuration: 0.3) {
+            UIView.animate(withDuration: 0.15) {
                 self.viewSelectDateTime.frame = CGRect(x: 0,
                                                        y: self.viewSelectDateTime.frame.minY - self.viewSelectDateTime.bounds.height,
                                                        width: self.viewSelectDateTime.bounds.width,
@@ -153,6 +156,7 @@ class OrderCreatingOrderVC: UIViewController {
     
     private func createOrder() {
         hideViewSelectDateTime()
+        
         self.navigationController?.popViewController(animated: true)
     }
     

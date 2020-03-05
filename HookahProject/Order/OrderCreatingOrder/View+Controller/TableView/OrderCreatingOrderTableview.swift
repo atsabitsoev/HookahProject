@@ -56,7 +56,7 @@ extension OrderCreatingOrderVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 145
+            return 153
         } else {
             return 44
         }
