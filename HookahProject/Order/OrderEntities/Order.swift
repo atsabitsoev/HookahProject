@@ -11,8 +11,19 @@ import Foundation
 
 struct Order {
     
+    var id: Int? = nil
     var customerCount: Int
     var optionIds: [Int]
     var dateTime: TimeInterval?
+    var orderStatus: OrderStatus?
+    
+}
+
+
+enum OrderStatus: Int {
+    
+    case waiting = 1
+    case approved = 2
+    case denied = 3
     
 }

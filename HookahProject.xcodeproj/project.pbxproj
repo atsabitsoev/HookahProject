@@ -12,6 +12,7 @@
 		AC0586F824082AA900B6CAF1 /* OCOCustomerCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0586F724082AA900B6CAF1 /* OCOCustomerCountCell.swift */; };
 		AC0586FA2408313B00B6CAF1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0586F92408313B00B6CAF1 /* Order.swift */; };
 		AC0586FD240835FE00B6CAF1 /* OrderCreatingOrderVCConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0586FC240835FE00B6CAF1 /* OrderCreatingOrderVCConfiguration.swift */; };
+		AC215C1D2413F09500C04C04 /* ViewOrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC215C1C2413F09500C04C04 /* ViewOrderStatus.swift */; };
 		AC6FE9232408394900F7A616 /* OCOOrderOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6FE9222408394900F7A616 /* OCOOrderOptionCell.swift */; };
 		AC71DE2F2406F5AE00363F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71DE2E2406F5AE00363F7A /* AppDelegate.swift */; };
 		AC71DE312406F5AE00363F7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71DE302406F5AE00363F7A /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 		AC0586F724082AA900B6CAF1 /* OCOCustomerCountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCOCustomerCountCell.swift; sourceTree = "<group>"; };
 		AC0586F92408313B00B6CAF1 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		AC0586FC240835FE00B6CAF1 /* OrderCreatingOrderVCConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCreatingOrderVCConfiguration.swift; sourceTree = "<group>"; };
+		AC215C1C2413F09500C04C04 /* ViewOrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOrderStatus.swift; sourceTree = "<group>"; };
 		AC6FE9222408394900F7A616 /* OCOOrderOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCOOrderOptionCell.swift; sourceTree = "<group>"; };
 		AC71DE2B2406F5AE00363F7A /* HookahProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HookahProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC71DE2E2406F5AE00363F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				AC71DE4A2406F72800363F7A /* OrderMain.storyboard */,
 				AC71DE4C2406F74100363F7A /* OrderMainVC.swift */,
+				AC215C1C2413F09500C04C04 /* ViewOrderStatus.swift */,
 			);
 			path = "View+Controller";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				AC0586F22408278B00B6CAF1 /* OrderCreatingOrderTableview.swift in Sources */,
 				ACE6F2AB24102B2A00C2E952 /* IntArrayExtension.swift in Sources */,
 				AC71DE532407048A00363F7A /* OrderCreatingOrderVC.swift in Sources */,
+				AC215C1D2413F09500C04C04 /* ViewOrderStatus.swift in Sources */,
 				AC6FE9232408394900F7A616 /* OCOOrderOptionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
