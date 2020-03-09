@@ -49,7 +49,7 @@ class OrderCreatingOrderVC: UIViewController {
                                                         availableDays: [1583452800,
                                                                         1583539200,
                                                                         1583798400])
-        order = Order(customerCount: 1, optionIds: [], dateTime: nil)
+        order = Order(customerCount: 1, options: [], dateTime: nil)
     }
     
     
@@ -196,15 +196,15 @@ extension OrderCreatingOrderVC: OCOCustomerCountCellDelegate {
 //MARK: Option Cell
 extension OrderCreatingOrderVC: OCOOrderOptionCellDelegate {
     
-    func addOption(id: Int) {
-        order?.optionIds.append(id)
-        print(order!.optionIds)
+    func addOption(option: OrderOption) {
+        order?.options.append(option)
+        print(order!.options)
     }
     
-    func deleteOption(id: Int) {
-        guard let indexOfOption = order?.optionIds.firstIndex(of: id) else { return }
-        order?.optionIds.remove(at: indexOfOption)
-        print(order!.optionIds)
+    func deleteOption(option: OrderOption) {
+        guard let indexOfOption = order?.options.firstIndex(of: option) else { return }
+        order?.options.remove(at: indexOfOption)
+        print(order!.options)
     }
     
 }

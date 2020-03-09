@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct OrderOption {
+struct OrderOption: Equatable {
     
     var id: Int
     var name: String

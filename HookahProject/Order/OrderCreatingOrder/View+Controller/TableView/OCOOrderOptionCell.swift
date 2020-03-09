@@ -10,8 +10,8 @@ import UIKit
 
 
 protocol OCOOrderOptionCellDelegate {
-    func addOption(id: Int)
-    func deleteOption(id: Int)
+    func addOption(option: OrderOption)
+    func deleteOption(option: OrderOption)
 }
 
 
@@ -25,11 +25,11 @@ class OCOOrderOptionCell: UITableViewCell {
     var delegate: OCOOrderOptionCellDelegate?
     
     
-    var optionId: Int!
+    var option: OrderOption!
     
     
     func fill(with option: OrderOption, isIncluded: Bool) {
-        self.optionId = option.id
+        self.option = option
         labTItle.text = option.name
         switchInclude.setOn(isIncluded, animated: false)
     }
@@ -48,7 +48,7 @@ class OCOOrderOptionCell: UITableViewCell {
     
         
     @IBAction func switchIncludeChanged(_ sender: UISwitch) {
-        sender.isOn ? delegate?.addOption(id: optionId) : delegate?.deleteOption(id: optionId)
+        sender.isOn ? delegate?.addOption(option: option) : delegate?.deleteOption(option: option)
     }
     
 

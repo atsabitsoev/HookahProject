@@ -14,7 +14,7 @@ struct Order {
     var id: Int? = nil
     var number: String? = nil
     var customerCount: Int
-    var optionIds: [Int]
+    var options: [OrderOption]
     var dateTime: Int?
     var orderStatus: OrderStatus?
     

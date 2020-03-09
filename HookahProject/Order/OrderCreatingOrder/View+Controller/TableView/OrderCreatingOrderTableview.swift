@@ -40,7 +40,7 @@ extension OrderCreatingOrderVC: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "OCOOrderOptionCell") as! OCOOrderOptionCell
             cell.delegate = self
             guard let currentOrderOption = configuration?.availableOptions[indexPath.row] else { return UITableViewCell() }
-            let isIncluded = order!.optionIds.contains(currentOrderOption.id)
+            let isIncluded = order!.options.contains(currentOrderOption)
             cell.fill(with: currentOrderOption, isIncluded: isIncluded)
             return cell
             
