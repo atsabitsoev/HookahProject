@@ -38,9 +38,9 @@ class OrderCreatingOrderVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        setDelegates()
         configureTapRecognizer()
         configureViewSelectDateTime()
+        setDelegates()
 
         configuration = OrderCreatingOrderConfiguration(maxCustomerCount: 5,
                                                         availableOptions: [OrderOption(id: 1, name: "У окна"),
@@ -57,6 +57,7 @@ class OrderCreatingOrderVC: UIViewController {
     private func setDelegates() {
         pickerView.delegate = self
         pickerView.dataSource = self
+        tapRecognizer.delegate = self
     }
     
     
@@ -237,4 +238,15 @@ extension OrderCreatingOrderVC: UIPickerViewDelegate {
         }
     }
     
+}
+
+
+//MARK: Tap Recognizer
+extension OrderCreatingOrderVC: UIGestureRecognizerDelegate {
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        let locationY = touch.location(in: viewSelectDateTime).y
+        print(locationY)
+        return locationY < 0
+    }
 }
